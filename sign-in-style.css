@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text-color : #737373;
+}
+
+
+.showcase {
+    height: auto;
+    
+
+}
+.showcase .dark-layout {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+    background-color: rgb(0, 0, 0,0.3);
+}
+.showcase .border-shadow {
+    width: 100%;
+    height: auto;
+    box-shadow: inset 0px 3rem 3rem black, inset 0px -3rem 3rem black;
+}
+.english-button {
+    color: white;
+    margin-right:10px ;
+}
+
+.form-sign-in-container {
+    max-width: 450px;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 2;
+    background-color: rgb(0,0,0,0.8);
+    padding: 70px;
+    border-radius: 5px;
+    
+}
+.form-sign-in-container form {
+    color: var(--text-color);
+}
+.form-sign-in-container h2 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+        color:white;
+        
+}
+.form-sign-in-container ul {
+    list-style-type: none;
+}
+.form-sign-in-container li {
+    margin-bottom: 40px;
+}
+.form-sign-in-container ul input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px;
+    color:#a5d6d2;
+    border-style: none;
+    border-radius: 4px;
+    background-color: darkslategrey;
+}
+
+.form-sign-in-container button {
+    border-style: none;
+    border-radius: 4px;
+    color:white;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+.form-sign-in-container form .flex1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    
+}
+.form-sign-in-container form .flex1 + div {
+    font-size: 0.6;
+    padding: 10px 0;
+    font-size: small;
+}.form-sign-in-container p {
+    font-size: 1rem;
+    margin:7px 0;
+}
+.form-sign-in-container .sing-up-btn {
+    color: white;   
+}
+.learn-more {
+    font-size: 1rem;
+    color: blue;
+}
+.learn-more:hover, .sign-up-btn:hover {
+    text-decoration: underline;
+}
+
+@media (max-height:633px) {
+    .showcase {
+        height: 100%;
+    }
+    .form-sign-in-container{
+        margin-bottom: 30px;
+    }
+}    
+@media (max-width:600px) {
+    
+    .form-sign-in-container {
+        width: 90%;
+        max-width: none;
+        border-radius: 0px;
+        padding: 20px 10px;
+        margin-bottom: 20px;
+    }
+    
+    .form-sign-in-container h2 {
+        text-align: center;
+    }
+    .showcase {
+        padding-bottom: 0;
+    }
+}
